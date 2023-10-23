@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
 * {
     margin: 0;
     padding: 0;
@@ -23,6 +25,7 @@ h1{
 }
 
 main{
+    margin-top: 2rem;
     display: grid;
     grid-gap: 30px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -44,4 +47,42 @@ main{
     text-decoration: none;
     color: inherit;
     font-size: 10px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-left: 10%;
+}
+
+.searchBar{
+    margin-left: 55%;
+    display: inline-flex;
+}
+
+.searchInput{
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 400px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
 }
